@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Crear competencia | Peli vs Peli</title>
+		<script src="../../js/jquery.js"></script>
+		<script src="../../js/jquery.form.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style-editar.css">
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<span class="icono"></span>
+				<span>Peli vs Peli</span>
+			</div>
+		</header>
+
+		<h1>Crear nueva competencia</h1>
+		<p id="mensajeDeError"></p>
+
+		<form id="formCompetencia">
+			<div>
+				<label>Nombre</label> <input type="text" name="nombre" id="nombre">
+			</div>
+			<div>
+				<label>Género</label> <select id="genero" name="genero"></select></label>
+			</div>
+			<div>
+				<label>Director</label> <select id="director" name="director"></select></label>
+			</div>
+			<div>
+				<label>Actor/Actriz</label> <select id="actor" name="actor"></select></label>
+			</div>
+
+			<input type="submit" name="Guardar" value="Crear"/>
+		</form>
+
+		<div class="footer-actions">
+			<a href="index.html">Volver al listado de competencias</a>
+		</div>
+
+		<script src="../../js/competencia.js"></script>
+		<script src="../../js/crear.js"></script>
+	</body>
+</html>

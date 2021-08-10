@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Eliminar competencia | Peli vs Peli</title>
+		<script src="../../js/jquery.js"></script>
+		<script src="../../js/jquery.form.js"></script>
+		<script type="text/javascript" src="../../js/helpers.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style-editar.css">
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<span class="icono"></span>
+				<span>Peli vs Peli</span>
+			</div>
+		</header>
+
+		<h1>¿Eliminar competencia?</h1>
+		<p id="mensajeDeError"></p>
+
+		<form id="formCompetencia">
+			<div>
+				<label>Nombre</label> <span class="nombre"></span>
+			</div>
+			<div>
+				<label>Género</label> <span class="genero"></span>
+			</div>
+			<div>
+				<label>Director</label> <span class="director"></span>
+			</div>
+			<div>
+				<label>Actor/Actriz</label> <span class="actor"></span>
+			</div>
+
+			<input type="submit" name="Eliminar" value="Eliminar" class="eliminar"/>
+			<input type="button" name="Cancelar" value="Cancelar" class="cancelar"/>
+		</form>
+
+		<div class="footer-actions">
+			<a href="index.html">Volver al listado de competencias</a>
+		</div>
+
+		<script src="../../js/competencia.js"></script>
+		<script src="../../js/eliminar.js"></script>
+	</body>
+</html>

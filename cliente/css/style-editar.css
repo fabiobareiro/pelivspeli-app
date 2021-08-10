@@ -1,0 +1,60 @@
+form {
+	padding: 20px;
+	margin: 30px auto;
+	max-width: 500px;
+	background-color: rgba(0,0,0,0.4);
+	text-align: left;
+	font-size: 15px;
+}
+form label {
+	margin: 5px 0;
+	text-transform: uppercase;
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.5);
+	padding-right: 20px;
+	min-width: 25%;
+}
+
+form input[type="button"], form input[type="submit"] {
+	background-color: #01be9d;
+	color: #fff;
+	border: 0;
+	padding: 7px 18px;
+	font-size: 15px;
+	margin: 10px 10px 0 0;
+	text-transform: uppercase;
+}
+
+form .confirmar {
+	margin: 20px 0;
+}
+
+form input[type="text"], form select {
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 0 8px;
+	font-size: 15px;
+	line-height: 26px;
+	background-color: transparent;
+	min-width: 40%;
+	margin-bottom: 5px;
+	border-radius: 0;
+	outline: none;
+}
+form input[type="text"]:focus, form select:focus {
+	border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+	form {
+		margin: 0 20px;
+	}
+	form label {
+		display: block;
+	}
+}

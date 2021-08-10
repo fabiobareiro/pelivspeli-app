@@ -1,0 +1,140 @@
+/* //////////// RESULTADOS //////////// */
+
+.row {
+	max-width: 720px;
+	height: 430px;
+	margin-bottom: 65px;
+}
+
+h2 {
+	color: #F3C500 !important;
+	font-size: 16px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.row .columnaPelicula {
+	width: 29.3%;
+	min-height: 430px;
+	margin: 0 2%;
+	padding-bottom: 30px;
+}
+
+.row .columnaPelicula .votos {
+	background-color: #F3C500 !important;
+	display: inline-block;
+	font-size: 14px;
+	padding: 5px 15px;
+	border-radius: 15px;
+	text-transform: lowercase;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/*--------- COLORES --------*/
+
+h2:nth-child(1) {
+	color: #EC493C;
+}
+
+h2:nth-child(2) {
+	color: #F3C500;
+}
+
+h2:nth-child(3) {
+	color: #01BE9D;
+}
+
+h2:nth-child(4) {
+	color: #9C54B8;
+}
+
+.row .columnaPelicula .votos:nth-child(1) {
+	background-color: #EC493C;
+}
+
+.row .columnaPelicula .votos:nth-child(2) {
+	background-color: #F3C500;
+}
+
+.row .columnaPelicula .votos:nth-child(3) {
+	background-color: #01BE9D;
+}
+
+.row .columnaPelicula .votos:nth-child(4) {
+	background-color: #9C54B8;
+}
+
+/*////////// RESPONSIVE ////////////*/
+
+@media only screen and (max-width: 1024px) {
+
+	h1#nombreCompetencia {
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+}	
+
+@media only screen and (max-width: 800px) {
+
+}	
+
+@media only screen and (max-width: 640px) {
+
+	.row {
+		width: 96%;
+		height: auto;
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+
+	.row .columnaPelicula {
+		width: 31.3%;
+		min-height: 380px;
+		margin: 0 1%;
+	}
+
+	h1#nombreCompetencia {
+		margin-top: 140px;
+	}
+
+	.row .columnaPelicula .votos {
+		font-size: 12px;
+		padding: 5px 12px;
+		border-radius: 10px;
+		white-space: nowrap;
+	}
+
+	h1#nombreCompetencia:before {
+		top: -36px;
+		font-size: 26px;
+	}
+
+}	
+
+@media only screen and (max-width: 480px) {
+
+	.row .columnaPelicula {
+		min-height: auto;
+	}
+
+	.row {
+		width: 100%;
+	}
+
+	.row .columnaPelicula {
+		width: 220px;
+		height: auto;
+		margin: 20px auto;
+		padding-bottom: 50px;
+		float: none;
+	}
+
+}
+

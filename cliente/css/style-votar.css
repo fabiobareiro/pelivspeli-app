@@ -1,0 +1,95 @@
+/* //////////// VOTAR //////////// */
+
+.row {
+	max-width: 485px;
+	height: 390px;
+	margin-bottom: 55px;
+}
+
+.row:before {
+	content: 'VS';
+	display: block;
+	position: absolute;
+	background-color: #F3C500;
+	z-index: 10;
+	border-radius: 50%;
+	padding: 26px;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	-webkit-box-shadow: 0 4px 6px -5px black;
+	   -moz-box-shadow: 0 4px 6px -5px black;
+	        box-shadow: 0 4px 6px -5px black;
+}
+
+.row .columnaPelicula {
+	width: 43.5%;
+	min-height: 410px;
+	margin: 0 3.25%;
+}
+
+.row .columnaPelicula {
+	transition: all .25s linear;
+}
+
+.row .columnaPelicula:hover {
+	transform: scale(1.025);
+}
+
+/*--------- COLORES --------*/
+
+.row:nth-child(1):before {
+	background-color: #EC493C;
+}
+
+.row:nth-child(2):before {
+	background-color: #F3C500;
+}
+
+.row:nth-child(3):before {
+	background-color: #01BE9D;
+}
+
+.row:nth-child(4):before {
+	background-color: #9C54B8;
+}
+
+/*////////// RESPONSIVE ////////////*/
+
+@media only screen and (max-width: 1024px) {
+
+	.row {
+		margin-bottom: 55px;
+	}
+
+}	
+
+@media only screen and (max-width: 800px) {
+
+}	
+
+@media only screen and (max-width: 640px) {
+
+	h1#nombreCompetencia {
+		margin-top: 140px;
+	}
+
+	h1#nombreCompetencia:before {
+		top: -36px;
+		font-size: 26px;
+	}
+
+	.row .columnaPelicula {
+		width: 46%;
+		height: 350px;
+		margin: 0 2%;
+	}
+
+	.row {
+		width: 96%;
+	}
+
+}	
+
+
+

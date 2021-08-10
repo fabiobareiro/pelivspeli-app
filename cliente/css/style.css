@@ -1,0 +1,226 @@
+/*--------- CUSTOM LAYOUT ---------*/
+
+@import url("normalize.css");
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/*------*/
+
+body {
+	background-color: #2D3E52;
+	color: #FFF;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1.2;
+	-webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-align: center;
+}
+
+h1, h2, h3, h4, p {
+    margin:0;
+    padding: 0;
+    font-weight: normal;
+    position: relative;
+    font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+    outline: 0;
+    color: #FFF;
+    text-transform: uppercase;
+	font-size: 14px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* //////////// HOME //////////// */
+
+header {
+	max-width: 970px;
+	margin: 30px auto 50px;
+	text-align: left;
+	padding: 0 20px;
+}
+
+header .logo .icono {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background: url(../img/logo_mvm.png) no-repeat;
+	background-size: auto 100%;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+header .logo span:last-child {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.competencias {
+	max-width: 970px;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.competencias .competencia {
+	flex: 1 1 25%;
+	max-width: 25%;
+	min-width: 220px;
+	text-align: left;
+	position: relative;
+	transition: all .25s linear;
+}
+
+.competencias .competencia .card {
+	margin: 15px;
+	height: 290px;
+	-webkit-box-shadow: 0 12px 26px -14px black;
+	   -moz-box-shadow: 0 12px 26px -14px black;
+	        box-shadow: 0 12px 26px -14px black;
+}
+
+.competencias .competencia:hover {
+	transform: scale(1.025);
+}
+
+.competencias .competencia h2 {
+	padding: 50px 25px 0 25px;
+	font-size: 22px;
+}
+
+.competencias .competencia h2 a {
+	font-size: 22px;
+	text-transform: none;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.competencias .competencia .actions {
+	position: absolute;
+	bottom: 0px;
+	padding: 15px 25px 40px;
+}
+
+.competencias .competencia .actions a {
+	margin-top: 10px;
+	display: block;
+}
+
+
+.competencias .competencia .card::before {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 0;
+	height: 0;
+	border-top: 31px solid #2D3E52;
+	border-left: 31px solid rgba(0,0,0,.2);
+}
+
+.footer-actions {
+	margin: 30px 20px;
+}
+
+.footer-actions a {
+	display: block;
+	margin: 10px 0;
+}
+
+/* //////////// INNER //////////// */
+
+h1 {
+	color: #fff;
+	position: relative;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 35px;
+}
+
+.row {
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+.row:after {
+	content: '';
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 30%;
+	background-color: #F3C500 !important;
+	z-index: -1;
+	clear: both;
+	display: table;
+}
+
+.row .columnaPelicula {
+	float: left;
+	background-color: #FFF;
+	position: relative;
+	transition: all .25s linear;
+	-webkit-box-shadow: 0 12px 26px -14px black;
+	   -moz-box-shadow: 0 12px 26px -14px black;
+	        box-shadow: 0 12px 26px -14px black;
+}
+
+.row .columnaPelicula img {
+	width: 100%;
+}
+
+.row .columnaPelicula h3 {
+	position: static;
+	width: 80%;
+	margin: auto;
+	font-size: 14px;
+	padding: 10px 0 15px 0;
+	color: #2D3E52;
+}
+
+/*--------- COLORES --------*/
+
+.color1 {
+	background-color: #EC493C;
+}
+
+.color2 {
+	background-color: #F3C500;
+}
+
+.color3 {
+	background-color: #01BE9D;
+}
+
+.color4 {
+	background-color: #9C54B8;
+}
+
+/*////////// RESPONSIVE ////////////*/
+
+@media only screen and (max-width: 480px) {
+	.competencias .competencia {
+		max-width: inherit;
+	}
+	.competencias .competencia .card {
+		margin: 15px 25px;
+		height: 220px;
+	}
+	.competencias .competencia .card::before {
+		top: 15px;
+		right: 25px;
+	}
+}
