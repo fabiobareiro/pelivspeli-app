@@ -63,6 +63,15 @@ async function getRandomCompetencies(req, res) {
         if (competencie[0].genero_id != null) getRandomQuery += ` AND`;
         getRandomQuery += ` dp.director_id=${competencie[0].director_id}`;
       }
+      if (competencie[0].actor_id != null) {
+        if (
+          competencie[0].genero_id != null ||
+          competencie[0].director_id != null
+        ) {
+          getRandomQuery += ` AND`;
+        }
+        getRandomQuery += ` ap.actor_id=${competencie[0].actor_id}`;
+      }
     }
     /* (getRandomQuery) --> Termina de construir la query para traer las dos películas aleatorias */
     getRandomQuery += ` ORDER BY rand() LIMIT 2;`;
